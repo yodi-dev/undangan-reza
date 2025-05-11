@@ -36,14 +36,14 @@ import VueEasyLightbox from 'vue-easy-lightbox'
 
 // Dummy gallery images (pakai URL umum dulu)
 const images = ref([
-  { src: 'https://picsum.photos/id/1015/600/400', alt: 'Foto 1' },
-  { src: 'https://picsum.photos/id/1016/600/400', alt: 'Foto 2' },
-  { src: 'https://picsum.photos/id/1018/600/400', alt: 'Foto 3' },
-  { src: 'https://picsum.photos/id/1021/600/400', alt: 'Foto 4' },
-  { src: 'https://picsum.photos/id/1025/600/400', alt: 'Foto 5' },
-  { src: 'https://picsum.photos/id/1033/600/400', alt: 'Foto 6' },
-  { src: 'https://picsum.photos/id/1042/600/400', alt: 'Foto 7' },
-  { src: 'https://picsum.photos/id/1050/600/400', alt: 'Foto 8' }
+  { src: '/images/1.jpeg', alt: 'Foto 1' },
+  { src: '/images/2.jpeg', alt: 'Foto 2' },
+  { src: '/images/3.jpeg', alt: 'Foto 3' },
+  { src: '/images/4.jpeg', alt: 'Foto 4' },
+  { src: '/images/5.jpeg', alt: 'Foto 5' },
+  { src: '/images/6.jpeg', alt: 'Foto 6' },
+  { src: '/images/7.jpeg', alt: 'Foto 7' },
+  { src: '/images/8.jpeg', alt: 'Foto 8' }
 ])
 
 const lightbox = ref({

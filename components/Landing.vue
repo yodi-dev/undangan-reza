@@ -1,7 +1,7 @@
 <template>
   <section
     class="relative flex items-center justify-center h-screen bg-cover bg-center"
-    style="background-image: url('/images/bg-landing.jpg')"
+    style="background-image: url('/images/bg-landing.jpeg')"
   >
     <!-- Overlay -->
     <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-0"></div>
