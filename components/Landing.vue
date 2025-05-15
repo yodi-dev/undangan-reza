@@ -33,6 +33,7 @@ const openInvitation = () => {
   landingRef.value.classList.add('opacity-0')
   setTimeout(() => {
     emit('open')
+    window.dispatchEvent(new Event('play-music'))
   }, 700)
 }
 </script>

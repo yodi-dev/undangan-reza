@@ -32,11 +32,12 @@ const toggleMusic = () => {
   }
 }
 
-// Optional: autoplay saat mounted
 onMounted(() => {
-  // uncomment kalau mau auto play saat buka halaman
-  audioRef.value?.play()
-  isPlaying.value = true
+  window.addEventListener('play-music', () => {
+    audioRef.value?.play().catch(err => {
+      console.warn('Autoplay gagal:', err)
+    })
+  })
 })
 </script>
 
