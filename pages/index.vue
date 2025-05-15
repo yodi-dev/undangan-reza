@@ -35,9 +35,9 @@ const showInvitation = ref(false)
 useSeoMeta({
   title: 'Reza & Desti | awan-dev',
   description: 'Undangan pernikahan resmi Reza & Desti. Temukan informasi acara, RSVP, lokasi, dan hitung mundur pernikahan kami.',
-  ogTitle: 'Reza & Desti | Undangan Pernikahan',
+  ogTitle: 'Reza & Desti | awan-dev.site',
   ogDescription: 'Undangan pernikahan resmi Reza & Desti.',
-  ogImage: '/images/og-image.png',
+  ogImage: 'https://undangan-reza.vercel.app/images/og-image.png',
   // ogUrl: 'https://domainmu.com',
   twitterCard: 'summary_large_image'
 })
