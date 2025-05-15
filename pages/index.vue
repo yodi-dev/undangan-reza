@@ -5,7 +5,7 @@
     <template v-else>
       <Countdown />
       <AyatArRum />
-      <BridgeGroum/>
+      <BridgeGroum />
       <LoveStory />
       <Event />
       <Gallery />
@@ -31,6 +31,16 @@ import ThankYou from '~/components/ThankYou.vue'
 import { ref } from 'vue'
 
 const showInvitation = ref(false)
+
+useSeoMeta({
+  title: 'Reza & Desti | awan-dev',
+  description: 'Undangan pernikahan resmi Reza & Desti. Temukan informasi acara, RSVP, lokasi, dan hitung mundur pernikahan kami.',
+  ogTitle: 'Reza & Desti | Undangan Pernikahan',
+  ogDescription: 'Undangan pernikahan resmi Reza & Desti.',
+  ogImage: '/images/og-image.png',
+  // ogUrl: 'https://domainmu.com',
+  twitterCard: 'summary_large_image'
+})
 
 </script>
 
