@@ -9,15 +9,26 @@ export default defineNuxtConfig({
 			{ name: 'author', content: 'Reza & Desti' },
 			{ property: 'og:type', content: 'website' }
 		  ],
-		//   link: [
-		// 	{ rel: 'icon', type: 'image/png', href: '/favicon.png' }
-		//   ]
+		  link: [
+			{ rel: 'icon', type: 'image/png', href: '/images/favicon.ico' }
+		  ]
 		}
 	  },
 	modules: [
 		"@nuxtjs/tailwindcss",
 		"@nuxt/eslint",
+		'@nuxtjs/google-fonts',
 	],
+	googleFonts: {
+		families: {
+		  'Great Vibes': [400],
+		  Montserrat:    [400, 600],
+		  Lato: [100, 300],
+		},
+		display: 'swap',
+		prefetch: true,
+		preconnect: true,
+	  },
 	devtools: { enabled: true },
 	compatibilityDate: "2024-11-01",
 	eslint: {
