@@ -1,15 +1,15 @@
 <template>
   <section class="relative h-screen w-full overflow-hidden" :style="{
-    backgroundImage: `url('/images/landing.jpg')`,
+    backgroundImage: `url('/images/countdown.webp')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }">
     <!-- overlay gelap tipis -->
     <div class="absolute inset-0 bg-black/40"></div>
 
-    <div class="relative z-10 flex flex-col items-center justify-end h-full text-center px-4 pb-32">
+    <div class="relative z-10 flex flex-col items-center justify-start h-full text-center px-4 pt-20">
       <h1 class="font-heading text-5xl text-white sm:text-6xl">Reza & Desti</h1>
-      <p class="font-body text-base text-white sm:text-lg py-5">Sabtu, 1 Juli 2025</p>
+      <p class="font-body text-base text-white sm:text-lg py-5">Sabtu, 26 Juli 2025</p>
       <div class="flex space-x-2 sm:space-x-4">
         <div v-for="(item, i) in countdownItems" :key="i" class="flex flex-col items-center">
           <div class="bg-white/70 text-[#2c2c2c] font-bold rounded-lg shadow-lg px-4 py-2 text-2xl sm:text-3xl">

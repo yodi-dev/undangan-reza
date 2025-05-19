@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
     theme: {
       extend: {
@@ -8,7 +7,6 @@ export default {
         }
       }
     },
-    // pastikan content mencakup .vue di seluruh direktori
-    content: ['./components/**/*.{vue,js}', './layouts/**/*.vue', './pages/**/*.vue', './app.vue']
+    content: ['./components/**/*.{vue,js}', './layouts/**/*.vue', './pages/**/*.vue', './app.vue'],
   }
   
