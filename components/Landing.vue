@@ -7,7 +7,7 @@
 
     <!-- Content -->
     <div
-      class="relative mb-28 text-white text-center px-8 py-10 rounded-3xl shadow-2xl max-w-lg animate-fade-in space-y-5">
+      class="relative mb-16 text-white text-center px-8 py-10 rounded-3xl shadow-2xl max-w-lg animate-fade-in space-y-5">
       <h1 class="text-4xl font-heading font-bold tracking-wide">
         Reza & Desti
       </h1>
