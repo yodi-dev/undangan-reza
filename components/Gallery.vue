@@ -1,57 +1,84 @@
 <template>
-  <section id="gallery" class="py-20 bg-rose-50">
-    <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-rose-600 mb-10">Galeri Kami</h2>
+  <h2 class="text-4xl font-bold font-heading text-center text-neutral-800 mb-3 tracking-wide">
+    Galeri Kami
+  </h2>
+  <section id="gallery" class="py-10 bg-[#fffdf9] font-body">
+    <div class="max-w-6xl mx-auto px-4">
+      <Splide :options="{
+        type: 'loop',
+        autoplay: true,
+        interval: 3000,
+        arrows: false,
+        pagination: false,
+        drag: true,
+        gap: '1rem'
+      }" class="w-full">
+        <SplideSlide v-for="(group, index) in portraitSlides" :key="index">
+          <div class="flex gap-4">
+            <div v-for="(img, i) in group" :key="i" class="w-1/2 overflow-hidden shadow-md group cursor-pointer"
+              @click="showLightboxFromPortrait(index * 2 + i)">
+              <img :src="img.src" :alt="img.alt"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
+            </div>
+          </div>
+        </SplideSlide>
+      </Splide>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        <div
-          v-for="(img, index) in images"
-          :key="index"
-          class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer"
-          @click="showLightbox(index)"
-        >
-          <img
-            :src="img.src"
-            :alt="img.alt"
-            class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-            loading="lazy"
-          />
+      <vue-easy-lightbox :visible="lightbox.visible" :imgs="portraitImages.map(i => i.src)" :index="lightbox.index"
+        @hide="lightbox.visible = false" />
+
+      <!-- Landscape Section -->
+      <div class="flex flex-col gap-4 mt-4">
+        <div v-for="(img, index) in landscapeImages" :key="index" class="overflow-hidden shadow-md group cursor-pointer"
+          @click="showLightboxFromLandscape(index)">
+          <img :src="img.src" :alt="img.alt"
+            class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" />
         </div>
       </div>
 
-      <!-- Lightbox viewer -->
-      <vue-easy-lightbox
-        :visible="lightbox.visible"
-        :imgs="images.map(i => i.src)"
-        :index="lightbox.index"
-        @hide="lightbox.visible = false"
-      />
+      <vue-easy-lightbox :visible="landscapeLightbox.visible" :imgs="landscapeImages.map(i => i.src)"
+        :index="landscapeLightbox.index" @hide="landscapeLightbox.visible = false" />
     </div>
   </section>
 </template>
 
 <script setup>
+import { Splide, SplideSlide } from '@splidejs/vue-splide'
+import '@splidejs/vue-splide/css'
 import { ref } from 'vue'
 import VueEasyLightbox from 'vue-easy-lightbox'
 
-// Dummy gallery images (pakai URL umum dulu)
-const images = ref([
-  { src: '/images/1.jpeg', alt: 'Foto 1' },
-  { src: '/images/2.jpeg', alt: 'Foto 2' },
-  { src: '/images/3.jpeg', alt: 'Foto 3' },
-  { src: '/images/4.jpeg', alt: 'Foto 4' },
-  { src: '/images/5.jpeg', alt: 'Foto 5' },
-  { src: '/images/6.jpeg', alt: 'Foto 6' },
-  { src: '/images/7.jpeg', alt: 'Foto 7' },
-  { src: '/images/8.jpeg', alt: 'Foto 8' }
-])
+const portraitImages = [
+  { src: '/images/2.webp', alt: 'Potret Mempelai' },
+  { src: '/images/3.webp', alt: 'Potret Mempelai' },
+  { src: '/images/4.webp', alt: 'Potret Mempelai' },
+  { src: '/images/5.webp', alt: 'Potret Mempelai' },
+  { src: '/images/6.webp', alt: 'Potret Mempelai' },
+  { src: '/images/10.webp', alt: 'Potret Mempelai' },
+  { src: '/images/13.webp', alt: 'Potret Mempelai' },
+  { src: '/images/14.webp', alt: 'Potret Mempelai' },
+]
 
-const lightbox = ref({
-  visible: false,
-  index: 0
-})
+const landscapeImages = [
+  { src: '/images/1.webp', alt: 'Potret Mempelai' },
+  { src: '/images/7.webp', alt: 'Potret Mempelai' },
+  { src: '/images/8.webp', alt: 'Potret Mempelai' },
+]
 
-function showLightbox(index) {
+// Kelompokkan jadi 2 foto per slide
+const portraitSlides = []
+for (let i = 0; i < portraitImages.length; i += 2) {
+  portraitSlides.push(portraitImages.slice(i, i + 2))
+}
+
+const landscapeLightbox = ref({ visible: false, index: 0 })
+function showLightboxFromLandscape(index) {
+  landscapeLightbox.value.index = index
+  landscapeLightbox.value.visible = true
+}
+
+const lightbox = ref({ visible: false, index: 0 })
+function showLightboxFromPortrait(index) {
   lightbox.value.index = index
   lightbox.value.visible = true
 }

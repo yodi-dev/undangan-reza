@@ -8,18 +8,18 @@
         Kisah kami dimulai dari aroma kopi dan senyum pelanggan — perjalanan hangat dari balik meja bar dan dapur.
       </p>
 
-      <div class="relative border-l-2 border-gradient-to-b from-amber-300 to-amber-100 pl-6 space-y-10">
+      <div class="relative border-l-2 border-gradient-to-b from-amber-600 to-amber-100 pl-6 space-y-10">
         <div v-for="(event, idx) in timeline" :key="idx" data-aos="fade-up" class="relative group">
           <!-- Timeline dot -->
           <div
-            class="absolute -left-4 top-1 w-8 h-8 bg-white border-[4px] border-amber-400 rounded-full flex items-center justify-center shadow-md transition-all duration-300 group-hover:scale-105">
+            class="absolute -left-4 top-1 w-8 h-8 bg-white border-[4px] border-amber-500 rounded-full flex items-center justify-center shadow-md transition-all duration-300 group-hover:scale-105">
             <span class="text-xl">{{ event.icon }}</span>
           </div>
 
           <!-- Content -->
           <div
             class="bg-white shadow-md hover:shadow-lg rounded-xl p-5 border border-amber-100 transition duration-300">
-            <p class="text-xs text-amber-500 font-semibold uppercase tracking-wide">{{ event.date }}</p>
+            <p class="text-xs text-amber-600 font-semibold uppercase tracking-wide">{{ event.date }}</p>
             <p class="text-neutral-700 font-body text-base mt-2 leading-relaxed">{{ event.description }}</p>
           </div>
         </div>

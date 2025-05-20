@@ -1,29 +1,31 @@
 <template>
-  <section id="event-detail" class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-rose-600 mb-12">Acara Pernikahan</h2>
+  <section id="event-detail" class="py-16 bg-white font-body">
+    <div class="max-w-4xl">
+      <h2 class="text-4xl font-bold font-heading text-center text-neutral-800 mb-12 tracking-wide">
+        Acara Pernikahan
+      </h2>
 
       <div class="space-y-12">
         <div v-for="(event, index) in events" :key="index"
-          class="bg-rose-50 border border-rose-200 rounded-2xl p-6 shadow-md md:flex md:items-start md:space-x-6"
+          class="bg-[#fefbf7] border border-amber-200 p-6 shadow-sm md:flex md:items-start md:space-x-6 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02] rounded-2xl"
           data-aos="fade-up">
-          <!-- Left Info -->
+          <!-- Kiri: Info Acara -->
           <div class="md:w-1/2 space-y-3">
-            <h3 class="text-2xl font-semibold text-rose-700">{{ event.title }}</h3>
-            <p class="text-gray-600 flex items-center gap-2">
+            <h3 class="text-2xl font-semibold text-amber-700">{{ event.title }}</h3>
+            <p class="text-neutral-600 flex items-center gap-2 text-sm">
               📅 {{ event.date }}
             </p>
-            <p class="text-gray-600 flex items-center gap-2">
+            <p class="text-neutral-600 flex items-center gap-2 text-sm">
               🕒 {{ event.time }}
             </p>
-            <p class="text-gray-600 flex items-start gap-2">
+            <p class="text-neutral-600 flex items-start gap-2 text-sm">
               📍<span>{{ event.location }}</span>
             </p>
           </div>
 
-          <!-- Right Map -->
+          <!-- Kanan: Peta -->
           <div class="mt-6 md:mt-0 md:w-1/2">
-            <div class="rounded-xl overflow-hidden shadow-lg">
+            <div class="overflow-hidden shadow-md">
               <iframe :src="event.mapUrl" width="100%" height="220" style="border:0;" allowfullscreen=""
                 loading="lazy"></iframe>
             </div>
