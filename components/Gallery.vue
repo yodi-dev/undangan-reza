@@ -1,8 +1,8 @@
 <template>
-  <h2 class="text-4xl font-bold font-heading text-center text-neutral-800 mb-3 tracking-wide">
-    Galeri Kami
-  </h2>
-  <section id="gallery" class="py-10 bg-[#fffdf9] font-body">
+  <section id="gallery" class="py-14 bg-[#fffdf9] font-body">
+    <h2 class="text-4xl font-bold font-heading text-center text-neutral-800 mb-12 tracking-wide">
+      Galeri Kami
+    </h2>
     <div class="max-w-6xl mx-auto px-4">
       <Splide :options="{
         type: 'loop',
