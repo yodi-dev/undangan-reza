@@ -1,24 +1,26 @@
 <template>
-  <section id="love-story" class="py-20 bg-rose-50">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center text-rose-600 mb-12">Our Love Story</h2>
+  <section id="love-story" class="py-20 bg-[#fefbf7] font-[Inter,sans-serif]">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-4xl font-bold font-heading text-center text-neutral-800 mb-3 tracking-wide">
+        Kisah Cinta
+      </h2>
+      <p class="text-center font-body text-neutral-500 mb-12 text-sm md:text-base leading-relaxed">
+        Kisah kami dimulai dari aroma kopi dan senyum pelanggan — perjalanan hangat dari balik meja bar dan dapur.
+      </p>
 
-      <div class="relative border-l-4 border-rose-300 pl-8 space-y-12">
-        <div
-          v-for="(event, idx) in timeline"
-          :key="idx"
-          data-aos="fade-up"
-          class="relative group"
-        >
+      <div class="relative border-l-2 border-gradient-to-b from-amber-300 to-amber-100 pl-6 space-y-10">
+        <div v-for="(event, idx) in timeline" :key="idx" data-aos="fade-up" class="relative group">
           <!-- Timeline dot -->
-          <div class="absolute -left-[14px] top-1 w-7 h-7 bg-white border-[5px] border-rose-500 rounded-full flex items-center justify-center shadow-md">
-            <span class="text-lg">{{ event.icon }}</span>
+          <div
+            class="absolute -left-4 top-1 w-8 h-8 bg-white border-[4px] border-amber-400 rounded-full flex items-center justify-center shadow-md transition-all duration-300 group-hover:scale-105">
+            <span class="text-xl">{{ event.icon }}</span>
           </div>
 
           <!-- Content -->
-          <div class="bg-white shadow-lg rounded-xl p-5 border border-rose-100">
-            <p class="text-sm text-rose-400 font-medium">{{ event.date }}</p>
-            <p class="text-gray-700 text-lg mt-1">{{ event.description }}</p>
+          <div
+            class="bg-white shadow-md hover:shadow-lg rounded-xl p-5 border border-amber-100 transition duration-300">
+            <p class="text-xs text-amber-500 font-semibold uppercase tracking-wide">{{ event.date }}</p>
+            <p class="text-neutral-700 font-body text-base mt-2 leading-relaxed">{{ event.description }}</p>
           </div>
         </div>
       </div>
@@ -37,28 +39,33 @@ onMounted(() => {
 
 const timeline = ref([
   {
-    date: '01 Jan 2020',
-    description: 'Pertemuan pertama di kafe kecil dekat kampus.',
-    icon: '☕️'
+    date: '10 Maret 2021',
+    description: 'Kami pertama kali bertemu di sebuah restoran kecil. Aku bagian barista, dia di dapur. Awalnya cuma saling sapa, lalu jadi saling tunggu waktu istirahat.',
+    icon: '🍽️'
   },
   {
-    date: '14 Feb 2020',
-    description: 'Mulai resmi berpacaran sambil makan malam romantis.',
-    icon: '❤️'
+    date: '24 Desember 2021',
+    description: 'Malam Natal saat restoran sibuk, kami saling bantu tanpa banyak bicara. Tapi di akhir shift, dia kasih cokelat panas. Dari situ, semuanya berubah.',
+    icon: '🎄'
   },
   {
-    date: '10 Jun 2021',
-    description: 'Liburan bersama di pantai, kenangan tak terlupakan.',
-    icon: '🌊'
+    date: '12 Mei 2022',
+    description: 'Libur bareng akhirnya datang. Kami jalan-jalan ke kota tua, makan jajanan kaki lima, dan ngobrol panjang seharian. Rasanya seperti tahu tujuan baru.',
+    icon: '🚶‍♂️🚶‍♀️'
   },
   {
-    date: '05 Mei 2025',
-    description: 'Lamaran, menuju babak baru kehidupan.',
+    date: '01 Januari 2025',
+    description: 'Di dalam restoran yang kini kami kelola bersama, dia melamar. Di meja sudut tempat kami sering makan malam diam-diam. Aku bilang, "ya".',
     icon: '💍'
   }
 ])
 </script>
 
 <style scoped>
-/* Optional: smooth AOS fade-in */
+/* Efek gradasi lembut */
+.border-gradient-to-b {
+  border-image: linear-gradient(to bottom, #fcd34d, #fef3c7);
+  /* Amber tone */
+  border-image-slice: 1;
+}
 </style>
