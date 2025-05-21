@@ -9,7 +9,7 @@
     <div
       class="relative mb-16 text-white text-center px-8 py-10 rounded-3xl shadow-2xl max-w-lg animate-fade-in space-y-5">
       <h1 class="text-5xl font-heading font-bold tracking-wide">
-        Reza & Desti
+        Desti & Reza
       </h1>
       <p class="text-md md:text-lg font-body font-light text-white/90 leading-relaxed">
         Dengan segala kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i untuk hadir

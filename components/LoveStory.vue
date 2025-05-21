@@ -1,25 +1,24 @@
 <template>
-  <section id="love-story" class="py-20 bg-[#fefbf7] font-[Inter,sans-serif]">
+  <section id="love-story" class="py-20 bg-[#fefbf7] font-[Inter,sans-serif] border border-rose-200">
     <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-4xl font-bold font-heading text-center text-neutral-800 mb-3 tracking-wide">
+      <h2 class="text-4xl font-bold font-heading text-center text-rose-600 mb-3 tracking-wide">
         Kisah Cinta
       </h2>
       <p class="text-center font-body text-neutral-500 mb-12 text-sm md:text-base leading-relaxed">
         Kisah kami dimulai dari aroma kopi dan senyum pelanggan — perjalanan hangat dari balik meja bar dan dapur.
       </p>
 
-      <div class="relative border-l-2 border-gradient-to-b from-amber-600 to-amber-100 pl-6 space-y-10">
+      <div class="relative border-l-2 border-gradient-to-b pl-6 space-y-10">
         <div v-for="(event, idx) in timeline" :key="idx" data-aos="fade-up" class="relative group">
           <!-- Timeline dot -->
           <div
-            class="absolute -left-4 top-1 w-8 h-8 bg-white border-[4px] border-amber-500 rounded-full flex items-center justify-center shadow-md transition-all duration-300 group-hover:scale-105">
+            class="absolute -left-4 top-1 w-8 h-8 bg-white border-[4px] border-rose-500 rounded-full flex items-center justify-center shadow-md transition-all duration-300 group-hover:scale-105">
             <span class="text-xl">{{ event.icon }}</span>
           </div>
 
           <!-- Content -->
-          <div
-            class="bg-white shadow-md hover:shadow-lg rounded-xl p-5 border border-amber-100 transition duration-300">
-            <p class="text-xs text-amber-600 font-semibold uppercase tracking-wide">{{ event.date }}</p>
+          <div class="bg-white shadow-md hover:shadow-lg rounded-xl p-5 border border-rose-100 transition duration-300">
+            <p class="text-xs text-rose-600 font-semibold uppercase tracking-wide">{{ event.date }}</p>
             <p class="text-neutral-700 font-body text-base mt-2 leading-relaxed">{{ event.description }}</p>
           </div>
         </div>
@@ -64,7 +63,7 @@ const timeline = ref([
 <style scoped>
 /* Efek gradasi lembut */
 .border-gradient-to-b {
-  border-image: linear-gradient(to bottom, #fcd34d, #fef3c7);
+  border-image: linear-gradient(to bottom, #fc4d5f, #fec7dd);
   /* Amber tone */
   border-image-slice: 1;
 }

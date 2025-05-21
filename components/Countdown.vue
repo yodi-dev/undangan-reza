@@ -8,7 +8,7 @@
     <div class="absolute inset-0 bg-black/40"></div>
 
     <div class="relative z-10 flex flex-col items-center justify-start h-full text-center px-4 pt-20">
-      <h1 class="font-heading text-5xl text-white sm:text-6xl">Reza & Desti</h1>
+      <h1 class="font-heading text-5xl text-white sm:text-6xl">Desti & Reza</h1>
       <p class="font-body text-base text-white sm:text-lg py-5">Sabtu, 26 Juli 2025</p>
       <div class="flex space-x-2 sm:space-x-4">
         <div v-for="(item, i) in countdownItems" :key="i" class="flex flex-col items-center">
