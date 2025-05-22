@@ -1,38 +1,27 @@
 <template>
-  <section id="thank-you" class="py-20 bg-gray-100 text-center">
-    <div class="max-w-xl mx-auto space-y-6 px-4">
-      <h2 class="text-3xl font-bold text-rose-600">Terima Kasih</h2>
-      <p class="text-gray-700 text-lg leading-relaxed">
-        Dengan penuh cinta dan rasa syukur, kami mengucapkan terima kasih atas doa, dukungan, dan kehadiranmu di hari bahagia kami.
-        Semoga kebahagiaan dan berkah senantiasa menyertai kita semua.
+  <section id="closing" class="py-20 bg-rose-100 text-center mt-20">
+    <div class="max-w-2xl mx-auto px-6 space-y-6">
+      <h2 class="text-3xl md:text-4xl font-bold font-heading text-rose-700">Sampai Jumpa di Hari Bahagia Kami!</h2>
+      <p class="text-sm text-gray-700 font-body">
+        Kami sangat menantikan kehadiran dan doa restu dari teman-teman semua. Terima kasih sudah menjadi bagian dari
+        cerita cinta kami ❤️
       </p>
-      <div class="flex justify-center space-x-4 pt-2">
-        <a
-          v-for="(social, idx) in socials"
-          :key="idx"
-          :href="social.url"
-          target="_blank"
-          class="transition transform hover:scale-110"
-        >
-          <img :src="social.icon" :alt="social.name" class="w-8 h-8" />
-        </a>
-      </div>
     </div>
   </section>
+
+  <footer class="bg-rose-200 text-center py-6">
+    <p class="text-sm text-gray-700">
+      Made with <span class="text-rose-500">♥</span> by
+      <a href="https://awan-dev.site" target="_blank"
+        class="font-semibold hover:underline text-rose-700">awan-dev.site</a>
+    </p>
+  </footer>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-
-const socials = ref([
-  { name: 'Instagram Nara', url: 'https://instagram.com/nara', icon: '/images/instagram.svg' },
-  { name: 'Instagram Pasangan', url: 'https://instagram.com/pasangan', icon: '/images/instagram.svg' }
-])
-</script>
-
 <style scoped>
-/* Tambahan efek soft */
-img {
-  filter: grayscale(20%);
+#closing {
+  background-image: linear-gradient(to right top, #ffe4e6, #fbcfe8);
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
 }
 </style>
