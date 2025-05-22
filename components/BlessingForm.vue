@@ -37,7 +37,7 @@
 
       <!-- Daftar Ucapan -->
       <div class="space-y-6">
-        <h3 class="text-2xl font-semibold text-center text-gray-800">Ucapan & Kehadiran</h3>
+        <h3 class="text-2xl font-semibold font-heading text-center text-rose-600">Ucapan & Kehadiran</h3>
         <div v-if="entries.length === 0" class="text-center text-gray-500 italic">
           Belum ada ucapan yang masuk.
         </div>

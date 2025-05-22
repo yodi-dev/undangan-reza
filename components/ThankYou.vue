@@ -1,7 +1,7 @@
 <template>
   <section id="closing" class="py-20 bg-rose-100 text-center mt-20">
     <div class="max-w-2xl mx-auto px-6 space-y-6">
-      <h2 class="text-3xl md:text-4xl font-bold font-heading text-rose-700">Sampai Jumpa di Hari Bahagia Kami!</h2>
+      <h2 class="text-3xl md:text-4xl font-bold font-heading text-rose-600">Sampai Jumpa di Hari Bahagia Kami!</h2>
       <p class="text-sm text-gray-700 font-body">
         Kami sangat menantikan kehadiran dan doa restu dari teman-teman semua. Terima kasih sudah menjadi bagian dari
         cerita cinta kami ❤️
