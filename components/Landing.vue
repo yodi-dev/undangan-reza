@@ -31,9 +31,16 @@ import { ref, onMounted } from 'vue'
 const guestName = ref('Tamu Undangan')
 
 onMounted(() => {
-  const hash = decodeURIComponent(window.location.hash.replace('#', ''))
-  if (hash) guestName.value = hash.replace(/-/g, ' ')
+  if (typeof window !== 'undefined' && window.location.hash) {
+    const hash = decodeURIComponent(window.location.hash.substring(1)) // lebih aman pakai substring
+    if (hash) {
+      guestName.value = hash
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase()) // Kapitalisasi tiap kata
+    }
+  }
 })
+
 
 const emit = defineEmits(['open'])
 const landingRef = ref(null)
