@@ -12,6 +12,7 @@
       <Gift />
       <BlessingForm />
       <ThankYou />
+      <AudioPlayer />
     </template>
   </div>
 </template>
@@ -27,6 +28,7 @@ import Gallery from '@/components/Gallery.vue'
 import Gift from '@/components/Gift.vue'
 import BlessingForm from '@/components/BlessingForm.vue'
 import ThankYou from '~/components/ThankYou.vue'
+import AudioPlayer from '~/components/AudioPlayer.vue'
 
 import { ref } from 'vue'
 
