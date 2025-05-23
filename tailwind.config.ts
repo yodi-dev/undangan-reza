@@ -3,7 +3,8 @@ export default {
       extend: {
         fontFamily: {
             heading: ['Great Vibes', 'serif'],
-          body:    ['Montserrat', 'sans-serif'],
+            second: ['Koh Santepheap', 'serif'],
+            body: ['Montserrat', 'sans-serif'],
         }
       }
     },

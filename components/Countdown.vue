@@ -25,7 +25,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 
-const target = new Date('2025-07-01T09:00:00+07:00').getTime()
+const target = new Date('2025-07-26T09:00:00+07:00').getTime()
 const days = ref(0), hours = ref(0), minutes = ref(0), seconds = ref(0)
 let timer
 
