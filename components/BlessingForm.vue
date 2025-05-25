@@ -45,8 +45,20 @@
           <li v-for="(entry, index) in entries" :key="index"
             class="bg-gray-50 p-5 rounded-xl shadow flex items-start space-x-4 border border-gray-100">
             <div class="text-3xl">
-              <span v-if="entry.attending === 'yes'" class="text-green-500">🎉</span>
-              <span v-else class="text-gray-400">🙏</span>
+              <span v-if="entry.attending === 'yes'" class="text-green-500"><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                  <path fill-rule="evenodd"
+                    d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span v-else class="text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                  fill="currentColor" class="size-5">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM8.28 7.22a.75.75 0 0 0-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 1 0 1.06 1.06L10 11.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L11.06 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L10 8.94 8.28 7.22Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
             </div>
             <div>
               <p class="font-semibold text-gray-800">{{ entry.name }}</p>

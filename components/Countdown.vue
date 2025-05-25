@@ -12,7 +12,7 @@
       <p class="font-body text-base text-white sm:text-lg py-5">Sabtu, 26 Juli 2025</p>
       <div class="flex space-x-2 sm:space-x-4">
         <div v-for="(item, i) in countdownItems" :key="i" class="flex flex-col items-center">
-          <div class="bg-white/70 text-[#2c2c2c] font-bold rounded-lg shadow-lg px-4 py-2 text-2xl sm:text-3xl">
+          <div class=" text-white font-bold  px-4 py-2 text-2xl sm:text-3xl">
             {{ item.value }}
           </div>
           <div class="mt-1 text-xs sm:text-sm text-white/90">{{ item.label }}</div>
