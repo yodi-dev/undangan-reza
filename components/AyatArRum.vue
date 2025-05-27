@@ -2,7 +2,7 @@
   <section class="relative py-16 bg-red-950 text-red-50 text-center px-6 border-b border-red-900">
     <div class="relative max-w-xl mx-auto space-y-6">
       <figure>
-        <img src="/images/peace.png" alt="Ikon Undangan" class="w-16 h-16 mx-auto opacity-90 drop-shadow-sm"
+        <img src="/images/dove.png" alt="Ikon Undangan" class="w-16 h-16 mx-auto opacity-90 drop-shadow-sm"
           loading="lazy" />
 
         <blockquote class="italic text-[17px] font-serif leading-relaxed tracking-wide my-5">
@@ -11,7 +11,7 @@
           sayang."
         </blockquote>
 
-        <figcaption class="text-sm text-red-300 font-medium tracking-wide uppercase">
+        <figcaption class="text-sm text-red-200 font-medium tracking-wide uppercase">
           QS. Ar-Rum: 21
         </figcaption>
       </figure>
