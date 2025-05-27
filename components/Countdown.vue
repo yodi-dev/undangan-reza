@@ -1,24 +1,27 @@
 <template>
-  <section class="relative h-screen w-full overflow-hidden" :style="{
-    backgroundImage: `url('/images/countdown.webp')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }">
+  <section class="relative h-screen w-full overflow-hidden bg-[url('/images/7.webp')] bg-cover custom-position">
     <!-- overlay gelap tipis -->
-    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-red-950 z-0"></div>
 
-    <div class="relative z-10 flex flex-col items-center justify-start h-full text-center px-4 pt-20">
-      <h1 class="font-heading text-5xl text-white sm:text-6xl">Desti & Reza</h1>
-      <p class="font-body text-base text-white sm:text-lg py-5">Sabtu, 26 Juli 2025</p>
-      <div class="flex space-x-2 sm:space-x-4">
-        <div v-for="(item, i) in countdownItems" :key="i" class="flex flex-col items-center">
-          <div class=" text-white font-bold  px-4 py-2 text-2xl sm:text-3xl">
-            {{ item.value }}
+    <div class="relative grid place-content-between justify-center h-full text-center px-4 py-20 text-red-100">
+      <div>
+        <p class="font-second text-xl">The Wedding Of</p>
+        <h1 class="font-heading text-5xl font-semibold sm:text-6xl mt-7 mb-1">Desti & Reza</h1>
+        <p class="font-second text-base sm:text-lg">Sabtu, 26 Juli 2025</p>
+      </div>
+      <div>
+        <p class="font-heading text-4xl mb-3">Countdown Timer</p>
+        <div class="flex space-x-2 sm:space-x-4 font-second justify-center">
+          <div v-for="(item, i) in countdownItems" :key="i" class="flex flex-col items-center">
+            <div class="font-bold bg-red-50 text-red-950 rounded-full px-4 py-2 text-xl sm:text-3xl">
+              {{ item.value }}
+            </div>
+            <div class="mt-1 text-xs sm:text-sm text-white/90">{{ item.label }}</div>
           </div>
-          <div class="mt-1 text-xs sm:text-sm text-white/90">{{ item.label }}</div>
         </div>
       </div>
     </div>
+
   </section>
 </template>
 
@@ -50,3 +53,9 @@ onMounted(() => {
 })
 onUnmounted(() => clearInterval(timer))
 </script>
+
+<style scoped>
+.custom-position {
+  background-position: 37% 50%;
+}
+</style>
