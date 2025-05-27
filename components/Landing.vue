@@ -6,8 +6,7 @@
     <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-red-950/90 z-0"></div>
 
     <!-- Content -->
-    <div
-      class="relative grid place-content-between text-red-100 text-center rounded-3xl max-w-lg animate-fade-in py-20">
+    <div class="relative grid place-content-between text-red-50 text-center rounded-3xl max-w-lg animate-fade-in py-20">
       <div>
         <p class="font-second text-xl">The Wedding Of</p>
         <h1 class="text-5xl font-heading font-bold tracking-wide mt-5">
@@ -15,12 +14,12 @@
         </h1>
       </div>
       <div>
-        <p class="text-sm md:text-lg font-second font-light text-white/90">
+        <p class="text-sm md:text-lg font-second font-light">
           Kepada Yth:
         </p>
         <p class="font-second font-semibold text-lg">{{ guestName }}</p>
         <button @click="openInvitation"
-          class="mt-4 inline-flex items-center gap-2 px-6 py-2 bg-white text-gray-800 font-second font-semibold rounded-3xl shadow-md hover:bg-gray-100 transition">
+          class="mt-4 inline-flex items-center gap-2 px-6 py-2 bg-red-50 text-gray-800 font-second font-semibold rounded-3xl shadow-md hover:bg-gray-100 transition">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
               <path fill-rule="evenodd"

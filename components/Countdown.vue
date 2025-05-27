@@ -3,17 +3,17 @@
     <!-- overlay gelap tipis -->
     <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-red-950 z-0"></div>
 
-    <div class="relative grid place-content-between justify-center h-full text-center px-4 py-20 text-red-100">
+    <div class="relative grid place-content-between justify-center h-full text-center px-4 py-20 text-red-50">
       <div>
         <p class="font-second text-xl">The Wedding Of</p>
-        <h1 class="font-heading text-5xl font-semibold sm:text-6xl mt-7 mb-1">Desti & Reza</h1>
+        <h1 class="font-heading text-5xl font-semibold sm:text-6xl mt-5">Desti & Reza</h1>
         <p class="font-second text-base sm:text-lg">Sabtu, 26 Juli 2025</p>
       </div>
       <div>
-        <p class="font-heading text-4xl mb-3">Countdown Timer</p>
+        <p class="font-heading text-3xl mb-3">Countdown Timer</p>
         <div class="flex space-x-2 sm:space-x-4 font-second justify-center">
           <div v-for="(item, i) in countdownItems" :key="i" class="flex flex-col items-center">
-            <div class="font-bold bg-red-50 text-red-950 rounded-full px-4 py-2 text-xl sm:text-3xl">
+            <div class="font-bold bg-red-50 text-red-950 rounded-full px-4 py-2 text-md">
               {{ item.value }}
             </div>
             <div class="mt-1 text-xs sm:text-sm text-white/90">{{ item.label }}</div>
