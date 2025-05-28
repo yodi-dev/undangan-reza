@@ -5,7 +5,7 @@
         <img src="/images/dove.png" alt="Ikon Undangan" class="w-16 h-16 mx-auto opacity-90 drop-shadow-sm"
           loading="lazy" />
 
-        <blockquote class="italic text-[17px] font-serif leading-relaxed tracking-wide my-5">
+        <blockquote class="italic text-md font-serif leading-relaxed tracking-wide my-5">
           "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu
           sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan
           sayang."
