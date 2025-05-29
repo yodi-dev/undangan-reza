@@ -26,7 +26,7 @@
             <label for="message" class="block text-sm font-medium text-rose-600 mb-1">Ucapan</label>
             <textarea id="message" v-model="form.message" rows="4" required
               placeholder="Tulis doa atau ucapan terbaikmu..."
-              class="w-full rounded-xl border border-rose-200 focus:ring-2 focus:ring-rose-300 focus:outline-none px-4 py-2 shadow-sm placeholder-rose-300"></textarea>
+              class="w-full rounded-xl text-black border border-rose-200 focus:ring-2 focus:ring-rose-300 focus:outline-none px-4 py-2 shadow-sm placeholder-rose-300"></textarea>
           </div>
           <button type="submit"
             class="w-full py-3 bg-rose-500 text-white font-semibold rounded-xl hover:bg-rose-600 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-400">

@@ -1,12 +1,12 @@
 <template>
-  <section id="event-detail" class="font-body py-20">
+  <section id="event-detail" class="font-body">
     <div class="max-w-4xl">
-      <div>
-        <h2 class="text-4xl font-bold font-heading text-center   tracking-wide">
+      <div class="bg-red-50 text-red-950 py-20">
+        <h2 class="text-4xl font-bold font-heading text-center tracking-wide">
           Acara Pernikahan
         </h2>
         <div v-for="(event, index) in events" :key="index"
-          class="bg-red-950 p-6 shadow-sm md:flex md:items-start md:space-x-6 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02]"
+          class=" p-6 shadow-sm md:flex md:items-start md:space-x-6 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02]"
           data-aos="fade-up">
           <!-- Kiri: Info Acara -->
           <div class="md:w-1/2 space-y-3">
