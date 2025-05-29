@@ -3,7 +3,7 @@
     <!-- overlay gelap tipis -->
     <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-red-950 z-0"></div>
 
-    <div class="relative grid place-content-between justify-center h-full text-center px-4 py-20 text-red-50">
+    <div class="relative grid place-content-between justify-center h-full text-center px-4 py-20">
       <div>
         <p class="font-second text-xl">The Wedding Of</p>
         <h1 class="font-heading text-5xl font-semibold sm:text-6xl mt-5">Desti & Reza</h1>
@@ -16,7 +16,7 @@
             <div class="font-bold bg-red-50 text-red-950 rounded-full px-4 py-2 text-md">
               {{ item.value }}
             </div>
-            <div class="mt-1 text-xs sm:text-sm text-white/90">{{ item.label }}</div>
+            <div class="mt-1 text-xs sm:text-sm">{{ item.label }}</div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#fefbf7] text-[#2c2c2c] font-sans">
+  <div class="bg-red-950 text-red-50">
     <Landing v-if="!showInvitation" @open="showInvitation = true" />
 
     <template v-else>

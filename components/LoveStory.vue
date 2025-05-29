@@ -1,10 +1,10 @@
 <template>
-  <section id="love-story" class="py-20 bg-[#fefbf7] font-[Inter,sans-serif] border border-rose-200">
+  <section id="love-story" class="py-20 font-[Inter,sans-serif]">
     <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-4xl font-bold font-heading text-center text-rose-600 mb-3 tracking-wide">
+      <h2 class="text-4xl font-bold font-heading text-center mb-3 tracking-wide">
         Kisah Cinta
       </h2>
-      <p class="text-center font-body text-neutral-500 mb-12 text-sm md:text-base leading-relaxed">
+      <p class="text-center font-body mb-12 text-sm md:text-base leading-relaxed">
         Kisah kami dimulai dari aroma kopi dan senyum pelanggan — perjalanan hangat dari balik meja bar dan dapur.
       </p>
 

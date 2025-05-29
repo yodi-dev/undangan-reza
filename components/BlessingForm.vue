@@ -1,5 +1,5 @@
 <template>
-  <section id="rsvp-blessing" class="py-20 bg-[#fefbf7] font-body">
+  <section id="rsvp-blessing" class="py-20 bg-red-950 font-body">
     <div class="max-w-2xl mx-auto space-y-16">
 
       <!-- Form Kehadiran -->
@@ -37,8 +37,8 @@
 
       <!-- Daftar Ucapan -->
       <div class="space-y-6">
-        <h3 class="text-2xl font-semibold font-heading text-center text-rose-600">Ucapan & Kehadiran</h3>
-        <div v-if="entries.length === 0" class="text-center text-gray-500 italic">
+        <h3 class="text-2xl font-semibold font-heading text-center">Ucapan & Kehadiran</h3>
+        <div v-if="entries.length === 0" class="text-center italic">
           Belum ada ucapan yang masuk.
         </div>
         <ul v-else class="space-y-4">

@@ -6,7 +6,7 @@
     <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-red-950/90 z-0"></div>
 
     <!-- Content -->
-    <div class="relative grid place-content-between text-red-50 text-center rounded-3xl max-w-lg animate-fade-in py-20">
+    <div class="relative grid place-content-between text-center rounded-3xl max-w-lg animate-fade-in py-20">
       <div>
         <p class="font-second text-xl">The Wedding Of</p>
         <h1 class="text-5xl font-heading font-bold tracking-wide mt-5">
