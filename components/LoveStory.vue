@@ -1,19 +1,16 @@
 <template>
   <section id="love-story" class="py-20 font-[Inter,sans-serif]">
     <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-4xl font-bold font-heading text-center mb-3 tracking-wide">
+      <h2 class="text-4xl font-bold font-heading text-center mb-3 tracking-wide mb-8">
         Kisah Cinta
       </h2>
-      <p class="text-center font-body mb-12 text-sm md:text-base leading-relaxed">
-        Kisah kami dimulai dari aroma kopi dan senyum pelanggan — perjalanan hangat dari balik meja bar dan dapur.
-      </p>
-
       <div class="relative border-l-2 border-gradient-to-b pl-6 space-y-10">
         <div v-for="(event, idx) in timeline" :key="idx" data-aos="fade-up" class="relative group">
           <!-- Timeline dot -->
           <div
             class="absolute -left-4 top-1 w-8 h-8 bg-white border-[4px] border-rose-500 rounded-full flex items-center justify-center shadow-md transition-all duration-300 group-hover:scale-105">
-            <span class="text-xl">{{ event.icon }}</span>
+            <span class="text-xl"><img :src="event.icon" alt="Icon" class="w-6 h-6" />
+            </span>
           </div>
 
           <!-- Content -->
@@ -38,24 +35,24 @@ onMounted(() => {
 
 const timeline = ref([
   {
-    date: '10 Maret 2021',
-    description: 'Kami pertama kali bertemu di sebuah restoran kecil. Aku bagian barista, dia di dapur. Awalnya cuma saling sapa, lalu jadi saling tunggu waktu istirahat.',
-    icon: '🍽️'
+    date: 'Pertemuan',
+    description: 'Tidak ada yang kebetulan di dunia ini. Semua sudah mempunyai porsi masing2 dan telah disusun rapi oleh sang maha kuasa. Pertemuan kami bermula dari tempat kerja sebuah restoran di kota teh obeng (batam), akhir tahun 2021.',
+    icon: '/icons/icon1.png'
   },
   {
-    date: '24 Desember 2021',
-    description: 'Malam Natal saat restoran sibuk, kami saling bantu tanpa banyak bicara. Tapi di akhir shift, dia kasih cokelat panas. Dari situ, semuanya berubah.',
-    icon: '🎄'
+    date: 'Pendekatan',
+    description: 'Katanya cinta dapat tumbuh dengan kebersamaan, seiring berjalannya waktu kami semakin dekat walau tidak ada kata pacaran dan terus berlanjut.',
+    icon: '/icons/icon2.png'
   },
   {
-    date: '12 Mei 2022',
-    description: 'Libur bareng akhirnya datang. Kami jalan-jalan ke kota tua, makan jajanan kaki lima, dan ngobrol panjang seharian. Rasanya seperti tahu tujuan baru.',
-    icon: '🚶‍♂️🚶‍♀️'
+    date: 'Tunangan',
+    description: 'Hingga akhirnya di tahun ke-3 (awal tahun 2024) kami memutuskan untuk cuti bersama ke kampung halamanku dan mengenal lebih dekat keluarga besar kami berdua. Di ikat dengan sebuah cincin, kami dan keluarga meresmikan hubungan dengan tujuan ke jenjang yang lebih serius.',
+    icon: '/icons/icon3.png'
   },
   {
-    date: '01 Januari 2025',
-    description: 'Di dalam restoran yang kini kami kelola bersama, dia melamar. Di meja sudut tempat kami sering makan malam diam-diam. Aku bilang, "ya".',
-    icon: '💍'
+    date: 'Pernikahan',
+    description: 'Alhamdulillah tidak ada usaha yang mengkhianati hasil, dengan penuh perjuangan di tanah perantauan kami mengusahakan untuk bisa mengikrarkan janji suci pernikahan di tahun ini.',
+    icon: '/icons/icon4.png'
   }
 ])
 </script>
