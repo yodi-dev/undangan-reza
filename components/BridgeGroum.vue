@@ -1,9 +1,14 @@
 <template>
-  <section class="text-white">
+  <section class="text-red-50 text-center py-20">
+    <h2 class="font-heading text-red-200 font-medium text-3xl tracking-wide leading-relaxed">Assalamu'alaikum Wr. Wb.
+    </h2>
+    <p class="text-sm px-8">Tanpa mengurangi rasa hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/I untuk menghadiri
+      acara pernikahan
+      kami</p>
     <!-- Mempelai Wanita -->
-    <div class="relative h-screen bg-cover bg-center" style="background-image: url('/images/bg-wanita.webp');">
+    <div class="relative h-screen bg-cover bg-center">
       <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/40 z-0"></div>
+      <!-- <div class="absolute inset-0 bg-black/40 z-0"></div> -->
 
       <!-- Konten -->
       <div class="relative z-10 h-full flex flex-col justify-end items-center text-center pb-24 px-4">
@@ -17,9 +22,9 @@
     </div>
 
     <!-- Mempelai Pria -->
-    <div class="relative h-screen bg-cover bg-center" style="background-image: url('/images/bg-pria.webp');">
+    <div class="relative h-screen bg-cover bg-center">
       <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/40 z-0"></div>
+      <!-- <div class="absolute inset-0 bg-black/40 z-0"></div> -->
 
       <!-- Konten -->
       <div class="relative z-10 h-full flex flex-col justify-end items-center text-center pb-24 px-4">
