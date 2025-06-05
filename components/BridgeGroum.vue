@@ -10,7 +10,6 @@
       <!-- Overlay -->
       <!-- <div class="absolute inset-0 bg-black/40 z-0"></div> -->
 
-      <!-- Konten -->
       <div class="relative z-10 h-full flex flex-col justify-end items-center text-center pb-24 px-4">
         <h2 class="text-3xl font-heading font-semibold tracking-wide mb-2">Desti Amalia</h2>
         <p class="text-sm font-body font-light mb-1">Putri Kedua dari Bapak Herianto & Ibu Lili Heriani</p>
@@ -26,7 +25,6 @@
       <!-- Overlay -->
       <!-- <div class="absolute inset-0 bg-black/40 z-0"></div> -->
 
-      <!-- Konten -->
       <div class="relative z-10 h-full flex flex-col justify-end items-center text-center pb-24 px-4">
         <h2 class="text-3xl font-heading font-semibold tracking-wide mb-2">Reza Saputra</h2>
         <p class="text-sm font-body font-light mb-1">Putra Keempat dari Bapak Komedi & Ibu Titin Sumarni</p>
