@@ -6,7 +6,6 @@
       acara pernikahan
       kami</p>
 
-
     <!-- Mempelai Wanita -->
     <div class="relative h-screen bg-cover bg-center">
       <!-- Overlay -->
