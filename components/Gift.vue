@@ -3,7 +3,7 @@
     <div class=" max-w-2xl mx-auto px-4 text-center space-y-10">
       <div>
         <h2 class="text-4xl font-bold mb-5 font-heading">Wedding Gift</h2>
-        <p class=" text-base font-body">
+        <p class="text-base font-body">
           Doa dan restu Anda adalah hadiah terbaik. Namun jika berkenan berbagi kasih, berikut adalah informasi rekening
           kami:
         </p>
