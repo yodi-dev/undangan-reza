@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-16 text-center px-6 border-b border-red-900">
+  <section class="relative py-16 text-center px-6">
     <div class="relative max-w-xl mx-auto space-y-6">
       <figure>
         <img src="/images/dove.png" alt="Ikon Undangan" class="w-16 h-16 mx-auto opacity-90 drop-shadow-sm"
