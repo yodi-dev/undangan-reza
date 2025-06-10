@@ -65,15 +65,15 @@ const events = ref([
   {
     title: 'Akad Nikah',
     date: 'Sabtu, 26 Juli 2025',
-    time: 'Pukul 09:00 - 11:00 WIB',
+    time: 'Pukul 09:00 - Selesai',
     location: 'Prumnas Muara Siban Desa Indikat Ilir',
     mapUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15924.049153595799!2d103.49610328674314!3d-3.807422826803422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3759c1f4809ff1%3A0x39082bdc1dda909!2sPerumnas!5e0!3m2!1sid!2sid!4v1747841218013!5m2!1sid!2sid'
   },
   {
     title: 'Resepsi',
-    date: 'Sabtu, 27 Juli 2025',
-    time: 'Pukul 08:00 WIB - Selesai',
+    date: 'Sabtu, 26 Juli 2025',
+    time: 'Pukul 09:00 WIB - Selesai',
     location: 'Prumnas Muara Siban Desa Indikat Ilir',
     mapUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15924.049153595799!2d103.49610328674314!3d-3.807422826803422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3759c1f4809ff1%3A0x39082bdc1dda909!2sPerumnas!5e0!3m2!1sid!2sid!4v1747841218013!5m2!1sid!2sid'
