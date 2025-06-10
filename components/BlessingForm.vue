@@ -4,8 +4,8 @@
 
       <!-- Form Kehadiran -->
       <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-red-100 text-red-950">
-        <h2 class="text-2xl font-heading font-bold text-center text-rose-600 mb-6">
-          Konfirmasi Kehadiran & Ucapan
+        <h2 class="text-4xl font-heading font-bold text-center text-rose-600 mb-6">
+          Konfirmasi Kehadiran <br>& Ucapan
         </h2>
         <form @submit.prevent="submitForm" class="space-y-5">
           <div>
@@ -37,7 +37,7 @@
 
       <!-- Daftar Ucapan -->
       <div class="space-y-6">
-        <h3 class="text-xl font-heading font-semibold text-center text-rose-200">Ucapan & Kehadiran</h3>
+        <h3 class="text-3xl font-heading font-semibold text-center text-rose-200">Ucapan & Kehadiran</h3>
         <div v-if="entries.length === 0" class="text-center italic text-rose-300">
           Belum ada ucapan yang masuk.
         </div>

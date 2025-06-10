@@ -1,5 +1,5 @@
 <template>
-  <section id="gallery" class="py-20 font-body bg-gradient-to-b from-rose-50/40 to-white">
+  <section id="gallery" class="py-20 font-body bg-gradient-to-b from-red-950 to-white">
     <h2 class="text-4xl font-bold font-heading text-center mb-12 tracking-wide">
       Galeri Kami
     </h2>

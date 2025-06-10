@@ -1,5 +1,5 @@
 <template>
-  <section id="event-detail" class="font-body py-20 bg-red-900/20">
+  <section id="event-detail" class="font-body py-20 bg-red-950">
     <div class="max-w-4xl mx-auto px-4">
       <div class="bg-white/90 text-red-950 py-12 rounded-xl shadow-lg">
         <h2 class="text-4xl font-bold font-heading text-center tracking-wide mb-8">
