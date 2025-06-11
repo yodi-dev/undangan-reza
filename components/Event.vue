@@ -3,7 +3,7 @@
     <div class="max-w-4xl mx-auto px-4">
       <div class="bg-white/90 text-red-950 py-12 rounded-xl shadow-lg">
         <h2 class="text-4xl font-bold font-heading text-center tracking-wide mb-8">
-          Acara Pernikahan
+          Wedding Event
         </h2>
 
         <!-- Card Gabungan -->

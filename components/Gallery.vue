@@ -16,7 +16,7 @@
         gap: '1rem'
       }" class="w-full">
         <SplideSlide v-for="(group, index) in portraitSlides" :key="index">
-          <div class="flex gap-4">
+          <div class="flex gap-2">
             <div v-for="(img, i) in group" :key="i" :class="[
               'overflow-hidden shadow-md group cursor-pointer transition-all rounded-lg',
               group.length === 1 ? 'w-full' : 'w-1/2'
@@ -32,7 +32,7 @@
         @hide="lightbox.visible = false" />
 
       <!-- Landscape Section -->
-      <div class="mt-16">
+      <div class="mt-4">
         <div class="columns-1 sm:columns-2 gap-4 space-y-4">
           <div v-for="(img, index) in landscapeImages" :key="index"
             class="overflow-hidden rounded-lg shadow-md group cursor-pointer break-inside-avoid"

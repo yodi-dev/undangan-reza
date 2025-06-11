@@ -4,8 +4,8 @@
 
       <!-- Form Kehadiran -->
       <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-red-100 text-red-950">
-        <h2 class="text-4xl font-heading font-bold text-center text-rose-600 mb-6">
-          Konfirmasi Kehadiran <br>& Ucapan
+        <h2 class="text-3xl font-heading font-bold text-center text-rose-600 mb-6">
+          Konfirmasi Kehadiran & Ucapan
         </h2>
         <form @submit.prevent="submitForm" class="space-y-5">
           <div>
