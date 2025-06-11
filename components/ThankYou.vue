@@ -11,7 +11,7 @@
 
     <!-- Foto Mempelai -->
     <div class="max-w-md mx-auto">
-      <img src="/images/2.webp" alt="Foto Mempelai" class="rounded-xl shadow-lg w-full object-cover" />
+      <img src="/images/3.webp" alt="Foto Mempelai" class="rounded-xl shadow-lg w-full object-cover" />
     </div>
 
     <!-- Kalimat "Kami yang Berbahagia" -->
