@@ -3,7 +3,7 @@
     <div class="max-w-3xl mx-auto px-4">
       <h2
         class="text-4xl font-bold font-heading text-center tracking-wide mb-12 text-red-100 border-b border-rose-500 pb-2">
-        Kisah Cinta
+        Love Story
       </h2>
       <div class="relative border-l-2 border-gradient-to-b pl-6 space-y-10">
         <div v-for="(event, idx) in timeline" :key="idx" data-aos="fade-up" class="relative group">

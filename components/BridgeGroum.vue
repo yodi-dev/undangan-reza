@@ -15,7 +15,7 @@
       <!-- Mempelai Wanita -->
       <div class="flex-1 text-center space-y-3">
         <img src="/images/bg-wanita.webp" alt="Desti Amalia"
-          class="w-56 h-56 object-cover rounded-full mx-auto border-4 border-red-300 shadow-lg hover:scale-105 transition" />
+          class="w-64 h-64 object-cover rounded-full mx-auto border-4 border-red-300 shadow-lg hover:scale-105 transition" />
         <h3 class="text-xl font-heading font-semibold mt-4">Desti Amalia</h3>
         <div class="w-16 h-[2px] bg-red-300 mx-auto mb-1"></div>
         <p class="text-xs">Putri Kedua dari Bapak Herianto & Ibu Lili Heriani</p>
@@ -26,12 +26,14 @@
       </div>
 
       <!-- Penghubung -->
-      <div class="text-4xl font-heading text-red-300">💞</div>
+      <div class="flex items-center text-4xl font-heading text-red-300">.......<img src="/icons/ring.png" alt="ring"
+          class="w-8 h-8 mx-3">.......
+      </div>
 
       <!-- Mempelai Pria -->
       <div class="flex-1 text-center space-y-3">
         <img src="/images/bg-pria.webp" alt="Reza Saputra"
-          class="w-56 h-56 object-cover rounded-full mx-auto border-4 border-red-300 shadow-lg hover:scale-105 transition" />
+          class="w-64 h-64 object-cover rounded-full mx-auto border-4 border-red-300 shadow-lg hover:scale-105 transition" />
         <h3 class="text-xl font-heading font-semibold mt-4">Reza Saputra</h3>
         <div class="w-16 h-[2px] bg-red-300 mx-auto mb-1"></div>
         <p class="text-xs">Putra Keempat dari Bapak Komedi & Ibu Titin Sumarni</p>

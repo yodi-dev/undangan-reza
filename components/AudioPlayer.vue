@@ -21,7 +21,7 @@
         </button>
 
         <audio ref="audioRef" loop preload="auto" autoplay>
-            <source src="../public/audio/bg-music.m4a" type="audio/mpeg" />
+            <source src="../public/audio/bg-music.mp3" type="audio/mpeg" />
         </audio>
     </div>
 </template>
