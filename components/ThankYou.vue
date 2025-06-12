@@ -35,7 +35,7 @@
 
       <!-- Credit Developer -->
       <p class="text-red-800 font-medium">
-        Made with ❤️ by <a href="https://awan-dev.site" class="underline hover:text-red-900"
+        Made with ♥ by <a href="https://awan-dev.site" class="underline hover:text-red-900"
           target="_blank">awan-dev.site</a>
       </p>
     </footer>

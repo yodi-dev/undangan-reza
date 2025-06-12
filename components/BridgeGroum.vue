@@ -25,6 +25,7 @@
         </a>
       </div>
 
+
       <!-- Penghubung -->
       <div class="flex items-center text-4xl font-heading text-red-300">.......<img src="/icons/ring.png" alt="ring"
           class="w-8 h-8 mx-3">.......
