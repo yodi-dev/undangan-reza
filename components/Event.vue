@@ -41,7 +41,7 @@
 
           <div class="mt-6 md:mt-0 md:w-1/2 overflow-hidden rounded-lg shadow-md border border-rose-200">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15924.049153595799!2d103.49610328674314!3d-3.807422826803422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3759c1f4809ff1%3A0x39082bdc1dda909!2sPerumnas!5e0!3m2!1sid!2sid!4v1747841218013!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2856.1721885358133!2d103.50260677497425!3d-3.806453296167383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwNDgnMjMuMiJTIDEwM8KwMzAnMTguNyJF!5e1!3m2!1sid!2sid!4v1750952303597!5m2!1sid!2sid"
               width="100%" height="260" style="border:0;" loading="lazy"></iframe>
           </div>
         </div>
