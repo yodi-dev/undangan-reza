@@ -3,7 +3,7 @@
     <div class="max-w-2xl mx-auto space-y-20 px-4">
 
       <!-- Form Kehadiran -->
-      <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-red-100 text-red-950">
+      <div class="bg-rose-100 p-6 md:p-8 rounded-2xl shadow-lg border border-red-100 text-red-950">
         <h2 class="text-3xl font-heading font-bold text-center text-rose-600 mb-6">
           Konfirmasi Kehadiran & Ucapan
         </h2>

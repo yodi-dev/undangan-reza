@@ -12,7 +12,7 @@
       <!-- Daftar Rekening -->
       <div class="space-y-5">
         <div v-for="(bank, idx) in banks" :key="idx"
-          class="relative overflow-hidden rounded-2xl shadow-lg bg-white p-5 border border-rose-100">
+          class="relative overflow-hidden rounded-2xl shadow-lg bg-rose-100 p-5 border border-rose-100">
           <div class="absolute -top-10 -right-10 w-32 h-32 bg-rose-100 rounded-full"></div>
 
           <div class="relative z-10 text-left space-y-1">

@@ -24,7 +24,7 @@
     <footer class="mt-12 text-xs text-red-700 space-y-2">
       <!-- Atribusi Musik -->
       <p class="italic">
-        Musik: "You'll Be in My Heart" - Niki – Phil Collins. Digunakan untuk kepentingan non-komersial.
+        Musik: "You'll Be in My Heart" - Niki – Phil Collins. <br> Digunakan untuk kepentingan non-komersial.
       </p>
 
       <!-- Atribusi Icon -->
