@@ -35,7 +35,7 @@ import { ref } from 'vue'
 const showInvitation = ref(false)
 
 useSeoMeta({
-  title: 'Reza & Desti | awan-dev',
+  title: 'Desti & Reza Wedding - awandev.site',
   description: 'Undangan pernikahan resmi Reza & Desti. Temukan informasi acara, RSVP, lokasi, dan hitung mundur pernikahan kami.',
   ogTitle: 'Reza & Desti | awan-dev.site',
   ogDescription: 'Undangan pernikahan resmi Reza & Desti.',

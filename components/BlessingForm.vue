@@ -82,18 +82,50 @@
 
 <script setup>
 import { ref } from 'vue'
+import { supabase } from '@/utils/supabase'
 
 const form = ref({ name: '', attending: '', message: '' })
 const entries = ref([])
 
 const toast = ref({ visible: false, message: '' })
 
-function submitForm() {
-  entries.value.unshift({ ...form.value })
+async function submitForm() {
+  const { error } = await supabase.from('guestbook').insert([{
+    name: form.value.name,
+    attending: form.value.attending,
+    message: form.value.message,
+    created_at: new Date().toISOString()
+  }])
+
+  if (error) {
+    toast.value = { visible: true, message: 'Gagal mengirim ucapan!' }
+    console.error(error)
+    return
+  }
+
   toast.value = { visible: true, message: 'Ucapan berhasil dikirim!' }
   form.value = { name: '', attending: '', message: '' }
-  setTimeout(() => (toast.value.visible = false), 2500)
+  fetchEntries()
 }
+
+async function fetchEntries() {
+  const { data, error } = await supabase
+    .from('guestbook')
+    .select('*')
+    .order('created_at', { ascending: false })
+
+  if (error) {
+    console.error('Gagal ambil data:', error)
+    return
+  }
+
+  entries.value = data
+}
+
+onMounted(() => {
+  fetchEntries()
+})
+
 </script>
 
 <style scoped>
