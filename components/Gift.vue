@@ -16,14 +16,14 @@
           <div class="absolute -top-10 -right-10 w-32 h-32 bg-rose-200 rounded-full"></div>
 
           <div class="relative z-10 text-left space-y-1">
-            <p class="text-lg font-semibold text-rose-600">{{ bank.name }}</p>
+            <p class="text-lg font-semibold text-red-900">{{ bank.name }}</p>
             <p class="text-gray-800 tracking-wider text-base font-mono">{{ bank.account }}</p>
             <p class="text-sm text-gray-500 italic">a.n. {{ bank.owner }}</p>
           </div>
 
           <div class="mt-4 flex justify-end">
             <button @click="copyToClipboard(bank.account)"
-              class="px-4 py-2 text-sm rounded-md bg-rose-500 text-white font-medium hover:bg-rose-600 transition-all shadow">
+              class="px-4 py-2 text-sm rounded-md bg-red-900 text-white font-medium hover:bg-rose-600 transition-all shadow">
               Salin Nomor
             </button>
           </div>

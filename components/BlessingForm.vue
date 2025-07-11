@@ -4,7 +4,7 @@
 
       <!-- Form Kehadiran -->
       <div class="bg-rose-100 p-6 md:p-8 rounded-2xl shadow-lg border border-red-100 text-red-950">
-        <h2 class="text-3xl font-heading font-bold text-center text-rose-600 mb-6">
+        <h2 class="text-3xl font-heading font-bold text-center text-red-900 mb-6">
           Konfirmasi Kehadiran & Ucapan
         </h2>
         <form @submit.prevent="submitForm" class="space-y-5">
@@ -29,7 +29,7 @@
               class="w-full rounded-xl border border-red-200 focus:ring-2 focus:ring-rose-300 focus:outline-none px-4 py-2 text-red-950 placeholder-red-400 shadow-sm"></textarea>
           </div>
           <button type="submit"
-            class="w-full py-3 bg-rose-500 text-white font-semibold rounded-xl hover:bg-rose-600 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-300">
+            class="w-full py-3 bg-red-900 text-white font-semibold rounded-xl hover:bg-red-950 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-300">
             Kirim Ucapan
           </button>
         </form>
