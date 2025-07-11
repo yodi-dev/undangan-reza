@@ -2,10 +2,10 @@
 export default defineNuxtConfig({
 	app: {
 		head: {
-		  title: 'Reza & Desti | awan-dev',
+		  title: 'Desti & Reza Wedding - awan-dev.site',
 		  meta: [
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ name: 'description', content: 'Undangan pernikahan resmi Reza & Desti. Silakan RSVP dan temukan lokasi acara.' },
+			{ name: 'description', content: 'Undangan pernikahan resmi Reza & Desti.' },
 			{ name: 'author', content: 'Reza & Desti' },
 			{ property: 'og:type', content: 'website' }
 		  ],

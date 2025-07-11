@@ -1,6 +1,6 @@
 <template>
   <section id="gift" class="py-20">
-    <div class=" max-w-2xl mx-auto px-4 text-center space-y-10">
+    <div class="max-w-2xl mx-auto px-4 text-center space-y-10">
       <div>
         <h2 class="text-4xl font-bold mb-5 font-heading">Wedding Gift</h2>
         <p class="text-base font-body">
@@ -12,7 +12,7 @@
       <!-- Daftar Rekening -->
       <div class="space-y-5">
         <div v-for="(bank, idx) in banks" :key="idx"
-          class="relative overflow-hidden rounded-2xl shadow-lg bg-rose-100 p-5 border border-rose-100">
+          class="relative overflow-hidden rounded-2xl shadow-lg bg-red-100 p-5 border border-rose-100">
           <div class="absolute -top-10 -right-10 w-32 h-32 bg-rose-200 rounded-full"></div>
 
           <div class="relative z-10 text-left space-y-1">
