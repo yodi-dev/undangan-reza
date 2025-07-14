@@ -39,7 +39,7 @@ useSeoMeta({
   description: 'Undangan pernikahan resmi Reza & Desti. Temukan informasi acara, RSVP, lokasi, dan hitung mundur pernikahan kami.',
   ogTitle: 'Desti & Reza Wedding - awan-dev.site',
   ogDescription: 'Kami mengundang Anda untuk hadir di hari bahagia kami.',
-  ogImage: 'https://undangan-reza.vercel.app/images/1.webp',
+  ogImage: 'https://undangan-reza.vercel.app/images/1.jpg',
   ogImageWidth: '1200',
   ogImageHeight: '630',
   ogUrl: 'https://undangan-reza.vercel.app',
